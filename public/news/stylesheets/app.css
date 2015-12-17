@@ -9256,7 +9256,7 @@ figure {
     color: #505050;
     padding-left: 28px;
     margin-left: -10px;
-    background-image: url("images/sprites/news--icons-sprite.png");
+    background-image: url("../../images/sprites/news--icons-sprite.png");
     background-repeat: no-repeat;
     background-position: left -4012px; }
   .timestamp .section-tag,
@@ -9304,7 +9304,7 @@ figure {
     color: #505050;
     padding-left: 28px;
     margin-left: -10px;
-    background-image: url("images/sprites/news--icons-sprite.png");
+    background-image: url("../../images/sprites/news--icons-sprite.png");
     background-repeat: no-repeat;
     background-position: left -4012px; }
   .HYPE_scene .timestamp .section-tag,

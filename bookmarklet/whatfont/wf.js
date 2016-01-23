@@ -2,7 +2,7 @@ function _whatFont() {
         var b, j, d, h, f, m, l, g;
         j = {
             STYLE_PRE: "__whatfont_",
-            CSS_URL: "http://dario.tv/bookmarklet/whatfont/wf.css?ver=1.6.1",
+            CSS_URL: "http://dario.tv/archives/bookmarklet/whatfont/wf.css?ver=1.6.1",
             LINK: null,
             init: function () {
                 if (j.CSS_URL) j.LINK = b("<link>").attr({

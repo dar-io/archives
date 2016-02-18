@@ -1,6 +1,14 @@
 // main.scss
 //
 
+$text:   rgb(50, 50, 50);
+$blue:   rgb(18, 150, 240);
+$red:    rgb(255, 54, 74);
+$yellow: rgb(255, 174, 63);
+$green:  rgb(0, 162, 97);
+$angle:  45deg;
+
+
 * {
   &,
   &:before,
@@ -12,10 +20,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: #333;
+  padding: 0 40px;
   font-size: 16px;
-  line-height: 22px; // 1.4
-  // -webkit-font-smoothing: antialiased;
+  color: $text;
+  background: #ededed;
 }
 
 // PAGE
@@ -31,5 +39,98 @@ body {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+
+
+
+
+
+.list-card{
+margin: 64px auto;
+background-color:#fff;
+display:block;
+padding: 8px 0 0 0;
+overflow:hidden;
+}
+
+
+h1 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+ol.squared {
+  font-size: 6px;
+  counter-reset:li;
+  margin-left:2em;
+  margin-right:2em;
+  margin-top:4em;
+  padding-left:0em;
+  margin-bottom:16em;
+}
+ol.squared li {
+  position:relative;
+  margin:0 0 2em 2em;
+  padding:0.2em 0.4em;
+  list-style:none;
+  border-bottom:0.2em solid $text;
+  transform-origin: 0% 0%;
+  font-family: "Helvetica",sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+ol.squared li:before {
+  content:counter(li);
+  counter-increment:li;
+  position:absolute;
+  top:-4px;
+  left:-2.2em;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width:2em;
+  margin-right:0.4em;
+  padding:0.2em;
+  color:$text;
+  border:0.2em solid $text;
+  font-weight:bold;
+  font-family:"Helvetica Neue", Arial, sans-serif;
+  text-align:center;
+}
+
+ol.squared li.blue, ol.squared li.blue:before {
+  color: $blue;
+  border-color: $blue;
+}
+ol.squared li.red, ol.squared li.red:before {
+  color: $red;
+  border-color: $red;
+}
+ol.squared li.yellow, ol.squared li.yellow:before {
+  color: $yellow;
+  border-color: $yellow;
+}
+ol.squared li.green, ol.squared li.green:before {
+  color: $green;
+  border-color: $green;
+}
+
+
+@media (min-width: 0px) {
+  h1 {
+  font-size: 28px;
+}
+  ol.squared {
+    font-size: 16px;
   }
 }

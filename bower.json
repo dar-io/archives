@@ -3,7 +3,7 @@
   "name": "archives",
   "description": "",
   "version": "0.0.0",
-  "homepage": "https://github.com/dar-io/archives",
+  "homepage": "https://github.com/dar-io/prototypes",
   "license": "MIT",
   "dependencies": {
     "jquery": "~2.1.1",
